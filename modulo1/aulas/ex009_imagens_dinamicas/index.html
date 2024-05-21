@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplemente aumente e diminua o tamanho do seu navegador</p>
+    <!--Técnica de responsividade para o meu site:-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--Colocando na ordem de maior para menor (de baixo para cima)--> <!--TELA PEQUENA-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--Acima dela sempre será maior--> <!--TELA MÉDIA-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> <!--Imagem padrão que quero carregar no site (Que será a maior em alguns casos)--> <!--TELA GRANDE-->
+    </picture>
+</body>
+</html>
