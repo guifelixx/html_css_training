@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        /*Pseudo-classes são palavras definem estados de elementos dentro da HTML
+        
+        SELETORES PERSONALIZADOS:
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{ /*Links visitados*/
+            color: darkred;
+        }
+
+        a:hover{/*Quando eu passo o mouse em cima*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{ /*Quando eu clicko nele*/
+            color: yellow;
+        }
+
+        .especial{
+            background-color: rgb(239, 146, 146);
+        }
+
+        /*Pseudo-elementos*/
+        .especial::before{
+            content: '⯌';
+        }
+
+        .especial::after{
+            content: '⯌	';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/guifelixx" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/guilherme-felix-pascoal-587790204/" target="_blank" class="especial">Linkedin</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" class="especial">Site do curso em vídeo</a></li>
+    </ul>
+</body>
+</html>
