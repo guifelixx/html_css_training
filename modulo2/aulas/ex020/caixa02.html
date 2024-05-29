@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(78, 78, 78);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.487);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(136, 136, 136);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Áreas relativas a cabeçalhos-->
+        <h1>Meu site</h1>
+        <nav> <!--Área que possui os links de navegação pela estrutura de páginas-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--É um agrupador usado para delimitar o conteúdo principal do site-->
+        <section id="assuntos"> <!--Conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos (Segundo a documentação oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente com um cabeçalho”.)-->
+            <p>Esportes Politica Tecnlogia</p>
+        </section>
+        <section id="noticias">
+            <article> <!--Conteúdo que pode ser lido de forma independente e dizem a respeito a um mesmo assunto (post de blog, fórum, noticia)-->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eum, odio cum dolor asperiores illo consequatur architecto pariatur obcaecati nam ducimus! Nesciunt quae qui quas provident minus. Magnam, necessitatibus non!</p>
+                <aside> <!--Conteúdo periférico e complementar-->
+                    <p>Artigo escrito por Jośe da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé que contém informações sobre autoria do conteúdo, links adicionais, mapa do site, documentos relacionados-->
+        <p>Desenvolvido por Guilherme Felix Pascoal</p>
+    </footer>
+</body>
+</html>
